@@ -1,10 +1,11 @@
-import { Navbar } from "./components"
+import { HeroSection, Navbar } from "./components"
 
 function App() {
   return (
-    <>
+    <main className="relative">
       <Navbar />
-    </>
+      <HeroSection />
+    </main>
   )
 }
 
