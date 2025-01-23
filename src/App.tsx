@@ -1,10 +1,17 @@
-import { HeroSection, Navbar } from "./components"
+import { SdkSection, BlogSection, Divider, FeaturesSection, Footer, HeroSection, Navbar, WeBelieveSection } from "./components"
 
 function App() {
   return (
-    <main className="relative">
+    <main className="relative grid gap-12">
       <Navbar />
       <HeroSection />
+      <Divider />
+      <FeaturesSection />
+      <SdkSection />
+      <BlogSection />
+      <WeBelieveSection />
+      <Divider />
+      <Footer />
     </main>
   )
 }
