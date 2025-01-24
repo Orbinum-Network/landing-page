@@ -1,0 +1,39 @@
+.text-import {
+    color: #569CD6;
+}
+
+.text-keyword {
+    color: #C586C0;
+}
+
+.text-constant {
+    color: #9CDCFE;
+}
+
+.text-string {
+    color: #CE9178;
+}
+
+.text-number {
+    color: #B5CEA8;
+}
+
+.text-function {
+    color: #DCDCAA;
+}
+
+.text-comment {
+    color: #6A9955;
+}
+
+.text-type {
+    color: #4EC9B0;
+}
+
+.text-bracket {
+    color: #ffff34; 
+}
+
+.text-function {
+    color: #DCDCAA; 
+}
