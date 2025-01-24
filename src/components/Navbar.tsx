@@ -10,8 +10,8 @@ export function Navbar() {
 
     return (
         <nav
-            className="bg-secondary-900/70 border-secondary-800 backdrop-blur-lg fixed z-50 w-full"
-            style={{ WebkitBackdropFilter: 'blur(1px)', backdropFilter: 'blur(1px)' }}
+            className="bg-secondary-900/70 border-secondary-800 backdrop-blur fixed z-50 w-full border-b"
+            style={{ WebkitBackdropFilter: 'blur(8px)', backdropFilter: 'blur(8px)' }}
         >
 
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -39,9 +39,9 @@ export function Navbar() {
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path
                                 stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M1 1h15M1 7h15M1 13h15"
                             />
                         </svg>
