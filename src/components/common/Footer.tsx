@@ -39,7 +39,7 @@ export function Footer() {
                                     <Link to="/terms" className="hover:underline">Terms of Service</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="/whitepaper.pdf" download className="hover:underline">Whitepaper</a>
+                                    <a href="/whitepaper.pdf" download="whitepaper.pdf" className="hover:underline">Whitepaper</a>
                                 </li>
                             </ul>
                         </div>

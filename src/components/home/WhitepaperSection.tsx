@@ -21,14 +21,13 @@ export function WhitepaperSection() {
                 <div className="flex justify-center">
                     <a
                         href="/whitepaper.pdf"
-                        download
+                        download="whitepaper.pdf"
                         className="drop-shadow-2xl rounded-md border border-primary px-3.5 py-2.5 text-sm font-semibold text-white backdrop-blur-md bg-white/10 transition-colors duration-300 hover:bg-primary/20"
                     >
-                        Whitepaper <span aria-hidden="true">→</span>
+                        Download Whitepaper <span aria-hidden="true">↓</span>
                     </a>
                 </div>
             </div>
         </section>
-
-    )
+    );
 }
