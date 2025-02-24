@@ -5,6 +5,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'zcool': ['ZCOOLKuaiLe', 'sans-serif'],
+      },
       colors: {
         primary: '#D74444',
         'primary-hover': '#b63535',
