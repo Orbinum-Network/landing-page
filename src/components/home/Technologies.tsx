@@ -5,7 +5,7 @@ export function Technologies() {
 
     const technologies = [
         { href: "https://ethereum.org/", src: ethereum, alt: "Ethereum", label: "" },
-        { href: "https://substrate.io/", src: substrate, alt: "Substrate", label: "" },
+        { href: "https://github.com/paritytech/polkadot-sdk/tree/master/substrate", src: substrate, alt: "Substrate", label: "" },
     ]
 
     return (
@@ -16,6 +16,7 @@ export function Technologies() {
                     <a
                         key={alt}
                         href={href}
+                        target="_blank"
                         className="flex items-center justify-center gap-2 group transition-all duration-300"
                     >
                         <img
