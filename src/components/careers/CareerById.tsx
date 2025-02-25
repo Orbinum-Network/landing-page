@@ -64,9 +64,23 @@ export const CareerById = ({ id }: { id: Career["id"] }) => {
                             <span>{career.location}</span> - <span>{career.employment_type}</span>
                         </div>
                         <p className="text-secondary-200 leading-relaxed">{career.description}</p>
+
+                        {career.requirements && career.requirements.length > 0 && (
+                            <div className="mt-6 p-6 bg-secondary-800 rounded-lg">
+                                <h2 className="text-2xl font-semibold text-secondary-100">Requirements</h2>
+                                <ul className="list-disc list-inside mt-3 space-y-2 text-secondary-300">
+                                    {career.requirements.map((req, index) => (
+                                        <li key={index}>{req}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
                         <div className="mt-10 p-6 bg-secondary-800 rounded-lg">
                             <h2 className="text-2xl font-semibold text-secondary-100">About working for us</h2>
-                            <p className="text-secondary-300 mt-3">We value innovation, collaboration, and a growth mindset. Our team is dedicated to making a difference in the industry by fostering a culture of learning and professional development.</p>
+                            <p className="text-secondary-300 mt-3">
+                                We value innovation, collaboration, and a growth mindset. Our team is dedicated to making a difference in the industry by fostering a culture of learning and professional development.
+                            </p>
                         </div>
                         <button
                             onClick={() => setIsModalOpen(true)}
@@ -77,7 +91,6 @@ export const CareerById = ({ id }: { id: Career["id"] }) => {
                     <ApplicationModal isOpen={isModalOpen} careerTitle={career.title} onClose={() => setIsModalOpen(false)} />
                 </>
             )}
-
         </div>
     );
 };
