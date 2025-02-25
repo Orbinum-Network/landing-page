@@ -112,7 +112,6 @@ export const ApplicationModal = ({ careerId, careerTitle, isOpen, onClose }: App
                 <div className="text-center p-2">
                     <Icon icon="mdi:check-circle" className="text-green-500 text-6xl mx-auto" />
                     <p className="text-secondary-500 mt-2">{submitted}</p>
-                    <button onClick={() => handleOnClose()} className="mt-6 px-6 py-2 bg-secondary-300 text-white rounded-lg hover:bg-secondary-500 transition duration-300">Close</button>
                 </div>
             ) : (
                 <>
