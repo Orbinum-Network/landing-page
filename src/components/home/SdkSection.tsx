@@ -16,7 +16,7 @@ export function SdkSection() {
                         </p>
                         <div className="mt-5 sm:flex md:mt-8">
                             <a className="drop-shadow-2xl rounded-md border border-primary px-3.5 py-2.5 text-sm font-semibold text-white backdrop-blur-md bg-white/10 transition-colors duration-300 hover:bg-primary/20" href="#">
-                                Comming soon
+                                Coming soon
                             </a>
                         </div>
                     </div>
