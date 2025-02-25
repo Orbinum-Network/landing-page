@@ -23,7 +23,7 @@ export const ApplicationModal = ({ careerId, careerTitle, isOpen, onClose }: App
 
     const [errors, setErrors] = useState({ name: "", email: "", file: "" });
     const [loading, setLoading] = useState(false);
-    const [submitted, setSubmitted] = useState(false);
+    const [submitted, setSubmitted] = useState<string | boolean>(false);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
@@ -90,11 +90,12 @@ export const ApplicationModal = ({ careerId, careerTitle, isOpen, onClose }: App
             formDataToSend.append("github", formData.github);
             formDataToSend.append("resume", formData.file as Blob);
 
-            await axios.post(`${API_URL}/careers/apply`, formDataToSend, {
+            const response = await axios.post(`${API_URL}/careers/apply`, formDataToSend, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
-
-            setSubmitted(true);
+            if (response.data.success) {
+                setSubmitted(response.data.message);
+            }
         } catch (error) {
             setErrors((prev) => ({
                 ...prev,
@@ -110,8 +111,7 @@ export const ApplicationModal = ({ careerId, careerTitle, isOpen, onClose }: App
             {submitted ? (
                 <div className="text-center p-2">
                     <Icon icon="mdi:check-circle" className="text-green-500 text-6xl mx-auto" />
-                    <h2 className="text-secondary-700 text-xl font-bold mt-4">Application Submitted</h2>
-                    <p className="text-secondary-500 mt-2">Thank you for applying for {careerTitle}. We will review your application and contact you at <strong>{formData.email}</strong> soon.</p>
+                    <p className="text-secondary-500 mt-2">{submitted}</p>
                     <button onClick={() => handleOnClose()} className="mt-6 px-6 py-2 bg-secondary-300 text-white rounded-lg hover:bg-secondary-500 transition duration-300">Close</button>
                 </div>
             ) : (
