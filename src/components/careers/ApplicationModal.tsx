@@ -5,12 +5,13 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { API_URL } from "@/config";
 
 interface ApplicationModalProps {
+    careerId: string;
+    careerTitle: string;
     isOpen: boolean;
     onClose: () => void;
-    careerTitle: string;
 }
 
-export const ApplicationModal = ({ isOpen, onClose, careerTitle }: ApplicationModalProps) => {
+export const ApplicationModal = ({ careerId, careerTitle, isOpen, onClose }: ApplicationModalProps) => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -81,6 +82,7 @@ export const ApplicationModal = ({ isOpen, onClose, careerTitle }: ApplicationMo
 
         try {
             const formDataToSend = new FormData();
+            formDataToSend.append("career_id", careerId);
             formDataToSend.append("name", formData.name);
             formDataToSend.append("email", formData.email);
             formDataToSend.append("linkedIn", formData.linkedIn);

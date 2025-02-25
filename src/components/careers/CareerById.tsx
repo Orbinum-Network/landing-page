@@ -88,7 +88,7 @@ export const CareerById = ({ id }: { id: Career["id"] }) => {
                             Apply for this job
                         </button>
                     </div>
-                    <ApplicationModal isOpen={isModalOpen} careerTitle={career.title} onClose={() => setIsModalOpen(false)} />
+                    <ApplicationModal careerId={career.id} careerTitle={career.title} isOpen={isModalOpen}  onClose={() => setIsModalOpen(false)} />
                 </>
             )}
         </div>
