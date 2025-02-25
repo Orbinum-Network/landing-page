@@ -6,8 +6,9 @@ export interface Career {
     location: string;
     employment_type: EmploymentType;
     description: string;
+    requirements: string[];
 }
 
 export interface Careers {
-    carrers: Career[]
+    carrers: Career[];
 }
