@@ -5,3 +5,5 @@ export * from "./Loader";
 export * from "./Promobar";
 export * from "./SectionTitle";
 export * from "./Modal";
+export * from "./AnimatedSection";
+export * from "./ScrollToTop";
