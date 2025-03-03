@@ -2,9 +2,9 @@ import { AnimatedSection, Divider, SectionTitle } from "@/components/common";
 
 export const TermsPage = () => {
     return (
-        <AnimatedSection>
+        <AnimatedSection className="bg-secondary-900">
             <div className="max-w-6xl mx-auto px-4 py-8 text-secondary-200 pt-32">
-                <SectionTitle title="Terms of Service" titleTwo="" />
+                <SectionTitle styleColor="black" sectionType="Documentation" title="Terms of Service" titleTwo="" />
                 <Divider />
                 <div className="flex justify-center my-12">
                     <p className="text-sm text-secondary-400 px-3 py-1 rounded-3xl text-xs border border-secondary-900 ring-2 ring-secondary-800 bg-secondary-900">Last Updated: 17-02-2025</p>
