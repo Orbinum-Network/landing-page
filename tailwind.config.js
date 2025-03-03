@@ -5,6 +5,7 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: ["smooth"],
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'zcool': ['ZCOOLKuaiLe', 'sans-serif'],
