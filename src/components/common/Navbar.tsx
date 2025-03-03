@@ -78,7 +78,7 @@ export function Navbar() {
                             </li>
                             <li>
                                 <Link
-                                    to="https://medium.com/@orbinumnetwork"
+                                    to="https://orbinumnetwork.medium.com/"
                                     className="block py-2 px-3 md:p-0 text-white rounded hover:bg-secondary-700 md:hover:bg-transparent md:hover:text-secondary-400"
                                 >
                                     Blog
