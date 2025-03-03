@@ -1,4 +1,4 @@
-import { AnimatedSection, Newsletter, SectionTitle } from '@/components/common';
+import { AnimatedSection, SectionTitle } from '@/components/common';
 import tokenomics_bg from '@/assets/tokenomics_bg.webp';
 import esferic3d from "@/assets/esferic3d.webp";
 import { ChartData } from '@/interfaces';
