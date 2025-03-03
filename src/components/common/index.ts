@@ -7,3 +7,4 @@ export * from "./SectionTitle";
 export * from "./Modal";
 export * from "./AnimatedSection";
 export * from "./ScrollToTop";
+export * from "./Newsletter";
