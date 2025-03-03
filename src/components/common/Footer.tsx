@@ -50,7 +50,7 @@ export function Footer() {
                                     <Link to="/contact" className="hover:underline">Contact Us</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link to="https://medium.com/@orbinumnetwork" target="_blank" className="hover:underline">Blog</Link>
+                                    <Link to="https://orbinumnetwork.medium.com/" target="_blank" className="hover:underline">Blog</Link>
                                 </li>
                             </ul>
                         </div>
@@ -63,11 +63,11 @@ export function Footer() {
                         © 2025 Orbinum Network. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0 items-center">
-                        <Link to="#" target="_blank" className="text-secondary-500 hover:text-secondary-900 dark:hover:text-white ms-5">
+                        <Link to="https://t.me/orbinumnetwork" target="_blank" className="text-secondary-500 hover:text-secondary-900 dark:hover:text-white ms-5">
                             <Icon icon="ic:baseline-telegram" width="24" height="24" />
                             <span className="sr-only">Telegram</span>
                         </Link>
-                        <Link to="https://medium.com/@orbinumnetwork" target="_blank" className="text-secondary-500 hover:text-secondary-900 dark:hover:text-white ms-5">
+                        <Link to="https://orbinumnetwork.medium.com/" target="_blank" className="text-secondary-500 hover:text-secondary-900 dark:hover:text-white ms-5">
                             <Icon icon="entypo-social:medium" width="24" height="24" />
                             <span className="sr-only">Medium</span>
                         </Link>
