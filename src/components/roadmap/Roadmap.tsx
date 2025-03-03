@@ -33,7 +33,7 @@ export const Roadmap = () => {
         {
             phase: 'Phase 1',
             title: 'Core Blockchain & Nodes',
-            time: '0-3 months',
+            time: 'Q1 + Q2 (2025)',
             state: RoadmapState.PROGRESS,
             tasks: [
                 'Develop the core blockchain using Substrate',
@@ -46,7 +46,7 @@ export const Roadmap = () => {
         {
             phase: 'Node Test',
             title: 'Infrastructure Validation',
-            time: '3 months',
+            time: 'Q2 (2025)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
                 'Run performance and stability tests on nodes',
@@ -57,7 +57,7 @@ export const Roadmap = () => {
         {
             phase: 'Phase 2',
             title: 'AI Infrastructure',
-            time: '3-6 months',
+            time: 'Q3 + Q4 (2025)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
                 'Implement the Federated Learning Framework',
@@ -69,7 +69,7 @@ export const Roadmap = () => {
         {
             phase: 'AI Test',
             title: 'AI Model Validation',
-            time: '6 months',
+            time: 'Q4 (2025)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
                 'Evaluate the performance of distributed AI training',
@@ -80,7 +80,7 @@ export const Roadmap = () => {
         {
             phase: 'Phase 3',
             title: 'Optimization & Growth',
-            time: '6-12 months',
+            time: 'Q1 (2026)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
                 'Enhance scalability with advanced sharding techniques',
@@ -94,7 +94,7 @@ export const Roadmap = () => {
 
     return (
         <SectionLayout>
-            <SectionTitle title="Track Our Development" titleTwo="Follow Our Roadmap" />
+            <SectionTitle styleColor="black" sectionType="Roadmap" title="Track Our Development" titleTwo="Follow Our Roadmap" />
             <Divider />
             <div className="max-w-xl mx-auto mt-8 p-8 border border-secondary-800 rounded-3xl">
                 <div className="flow-root">
