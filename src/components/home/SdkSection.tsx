@@ -4,7 +4,7 @@ import { SectionTitle } from "../common";
 export function SdkSection() {
     return (
         <SectionLayout>
-            <SectionTitle title="Seamlessly Integrate Our Models" titleTwo="Into Your Projects" />
+            <SectionTitle styleColor="black" sectionType="Developers" title="Seamlessly Integrate Our Models" titleTwo="Into Your Projects" />
             <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
                 <div className="w-full p-4 relative flex items-center py-5 md:w-1/2 md:p-10  border border-secondary-800 rounded-3xl">
                     <div className="relative z-10 text-left">

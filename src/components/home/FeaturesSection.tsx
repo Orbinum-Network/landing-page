@@ -7,7 +7,7 @@ import { SectionTitle } from "../common";
 export function FeaturesSection() {
     return (
         <SectionLayout>
-            <SectionTitle title="Unique Infrastructure" titleTwo="For Advanced AI Models" />
+            <SectionTitle styleColor="black" sectionType="Infrastructure" title="Unique Infrastructure" titleTwo="For Advanced AI Models" />
             <div className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto items-center group rounded-3xl border border-secondary-900 hover:border-secondary-800 min-h-[150px] lg:min-h-[300px]">
                     <div className="max-w-xl mx-auto lg:mx-0 lg:max-w-none order-2 md:order-1 p-6 lg:p-8 h-full flex flex-col justify-center">

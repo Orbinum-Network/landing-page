@@ -15,7 +15,7 @@ export function WhitepaperSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
             <div>
                 <div className="text-center">
-                    <SectionTitle title="Discover Orbinum" titleTwo="Read The Whitepaper" />
+                    <SectionTitle styleColor="black" sectionType="Whitepaper" title="Discover Orbinum" titleTwo="Read The Whitepaper" />
                 </div>
 
                 <div className="flex justify-center">
