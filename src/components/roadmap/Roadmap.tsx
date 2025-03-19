@@ -32,63 +32,67 @@ export const Roadmap = () => {
     const phases = [
         {
             phase: 'Phase 1',
-            title: 'Core Blockchain & Nodes',
+            title: 'Blockchain Test Network with NPoS',
             time: 'Q1 + Q2 (2025)',
             state: RoadmapState.PROGRESS,
             tasks: [
-                'Develop the core blockchain using Substrate',
-                'Implement NPoS and PoC consensus mechanisms',
-                'Design and deploy the ON token with basic staking mechanics',
-                'Set up the node infrastructure (Sentinel, Neural, Omni, Tensor)',
-                'Initial testing of nodes and consensus mechanisms'
-            ],
-        },
-        {
-            phase: 'Node Test',
-            title: 'Infrastructure Validation',
-            time: 'Q2 (2025)',
-            state: RoadmapState.NOT_STARTED,
-            tasks: [
-                'Run performance and stability tests on nodes',
-                'Adjust consensus mechanisms and security features',
-                'Validate staking and initial governance setup'
+                'Develop core blockchain test network using Substrate',
+                'Implement NPoS consensus mechanism',
+                'Deploy initial test version of the ON token with basic staking',
+                'Set up basic node infrastructure for testing',
+                'Initial testing of the blockchain and NPoS consensus',
             ],
         },
         {
             phase: 'Phase 2',
-            title: 'AI Infrastructure',
+            title: 'Distributed Model Sharding & Proof-of-Contribution Test',
+            time: 'Q2 - Q3 (2025)',
+            state: RoadmapState.NOT_STARTED,
+            tasks: [
+                'Develop the Distributed Model Sharding Framework (DMSF)',
+                'Implement Proof-of-Contribution (PoC) consensus mechanism for testing',
+                'Integrate basic data privacy features',
+                'Test DMSF functionality and PoC mechanism',
+                'Validate initial node participation and contribution flow',
+            ],
+        },
+        {
+            phase: 'Federated learning Test',
+            title: 'Federated Learning Testing',
             time: 'Q3 + Q4 (2025)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
-                'Implement the Federated Learning Framework',
-                'Develop the Distributed Model Sharding Framework (DMSF)',
-                'Integrate basic privacy mechanisms and cryptographic signatures',
-                'Deploy initial AI model training on Neural and Tensor Nodes'
+                'Implement the federated learning framework',
+                'Integrate cryptographic signatures for model validation',
+                'Conduct initial distributed AI model training tests',
+                'Evaluate performance and privacy aspects of federated learning',
             ],
         },
         {
-            phase: 'AI Test',
-            title: 'AI Model Validation',
-            time: 'Q4 (2025)',
+            phase: 'Combined Infrastructure Test',
+            title: 'Integrated Blockchain & AI Infrastructure Testing',
+            time: 'Q4 (2025) + Q1 (2026)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
-                'Evaluate the performance of distributed AI training',
-                'Optimize model storage and retrieval',
-                'Verify security and quality of data contributions'
+                'Test the integrated functionality of NPoS, PoC, DMSF, and Federated Learning',
+                'Evaluate overall network stability and performance',
+                'Refine incentive mechanisms based on test results',
+                'Test basic governance functionalities',
             ],
         },
         {
-            phase: 'Phase 3',
-            title: 'Optimization & Growth',
-            time: 'Q1 (2026)',
+            phase: 'Optimization & Preparation for Mainnet',
+            title: 'Network Optimization & Mainnet Readiness',
+            time: 'Q1 - Q2 (2026)',
             state: RoadmapState.NOT_STARTED,
             tasks: [
-                'Enhance scalability with advanced sharding techniques',
-                'Optimize incentives and tokenomics based on real usage',
-                'Integrate with Polkadot for interoperability',
-                'Expand network adoption and increase node participation'
+                'Optimize scalability and security features',
+                'Finalize tokenomics and governance structure',
+                'Prepare for Polkadot integration',
+                'Conduct final testing and audits',
+                'Plan for mainnet launch and community onboarding',
             ],
-        }
+        },
     ];
 
 
@@ -117,7 +121,7 @@ export const Roadmap = () => {
                                             <div className="min-w-0 flex-1 py-0">
                                                 <div className="text-md text-gray-500">
                                                     <div className="flex gap-2 items-center">
-                                                        <p className="font-medium text-secondary-100 mr-2">{phase.phase}</p>
+                                                        {/* <p className="font-medium text-secondary-100 mr-2">{phase.phase}</p> */}
                                                         <p className="my-0.5 relative inline-flex items-center bg-secondary-700 rounded-full ring ring-secondary-600 px-3 py-0.5 text-sm">
                                                             <div className="absolute flex items-center justify-center size-3">
                                                                 <span className={`
