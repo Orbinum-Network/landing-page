@@ -25,7 +25,7 @@ export function TokenomicsPage() {
                     </div>
                     <div className="flex justify-center">
                         <a
-                            href="https://docs.orbinum.net/tokenomics"
+                            href="https://docs.orbinum.net/basic-concepts/economy-model"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group px-4 py-2 text-md font-medium border border-secondary-500 rounded-lg transition duration-300 hover:bg-secondary-700 hover:border-secondary-400 hover:text-white"
