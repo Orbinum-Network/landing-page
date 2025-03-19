@@ -63,10 +63,10 @@ export function FeaturesSection() {
                         </div>
                         <div className="mt-6">
                             <h2 className="text-2xl font-bold tracking-tight text-white">
-                                Federated Learning Framework
+                                Hybrid Consensus Mechanism
                             </h2>
                             <p className="mt-4 text-md text-gray-300">
-                                Collaborative AI model training across decentralized nodes ensures data privacy and sovereignty. Nodes train models locally and share only model updates, which are aggregated to improve the global model.
+                                Integrating Nominated Proof of Stake (NPoS) and Proof of Contribution (PoC) to ensure network security, scalability, and fair incentivization.
                             </p>
                         </div>
                     </div>
