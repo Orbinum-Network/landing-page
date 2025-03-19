@@ -10,46 +10,46 @@ import geometry3 from "@/assets/geometry3.webp";
 export function AboutSection() {
     const grids = [
         {
-            title: "Empower the AI Revolution",
-            description: "Become an Orbinum node operator and shape the future of decentralized AI. Earn rewards while contributing to cutting-edge AI development and network security.",
+            title: "Run a Validator Node",
+            description: "Secure the network, validate AI, earn rewards.",
             bg: stars1,
             figure: geometry1,
-            url: ""
+            url: "https://docs.orbinum.net/basic-concepts/participants#validators-guardians-and-ai-operators-of-the-orbinum-network"
         },
         {
-            title: "Be Part of Something Bigger",
-            description: "Stake your ON tokens and join a global community revolutionizing AI. Participate in governance and earn rewards while supporting network growth.",
+            title: "Stake & Govern",
+            description: "Support Validators, shape Orbinum, earn ON.",
             bg: stars2,
             figure: geometry2,
-            url: ""
+            url: "https://docs.orbinum.net/basic-concepts/participants#nominators-supporting-network-security"
         },
         {
-            title: "Monetize Your Computing Power",
-            description: "Turn your GPUs into profit centers! Contribute to federated AI training and earn passive income while advancing ethical AI development.",
+            title: "Contribute Compute",
+            description: "Power AI tasks, earn rewards for your GPUs.",
             bg: stars3,
             figure: geometry3,
-            url: ""
+            url: "https://docs.orbinum.net/basic-concepts/participants#contributors-providing-computational-power-for-ai"
         },
     ];
 
     return (
         <SectionLayout>
             <div className="grid gap-5 justify-center">
-            <div className="relative overflow-hidden rounded-3xl group border border-secondary-700 hover:border-secondary-600 h-96 mb-5">
+                <div className="relative overflow-hidden rounded-3xl group border border-secondary-700 hover:border-secondary-600 h-96 mb-5">
                     <div
                         className="absolute inset-0 z-0 bg-cover bg-top transition-transform duration-500 ease-in-out group-hover:scale-110"
                         style={{ backgroundImage: `url(${backgroundImage})` }}
                     ></div>
                     <div className="relative z-20 flex flex-col justify-center h-full w-full lg:w-1/2">
-                        <div className="px-2 md:px-6 max-w-3xl mx-auto">
+                        <div className="px-6 max-w-3xl mx-auto">
                             <h1 className="font-roboto mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-white">
-                                Empowering the Future of AI, Together
+                                Decentralized AI, Collaborative Growth
                             </h1>
                             <p className="mb-6 font-light text-gray-300 lg:mb-8 md:text-lg">
-                                Discover how Orbinum Network is revolutionizing artificial intelligence through a decentralized ecosystem, where nodes and holders collaborate globally through incentives to drive innovation.
+                                Join Orbinum Network and be part of a decentralized AI ecosystem. Earn incentives by contributing to innovation and network strength.
                             </p>
-                            <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white border border-transparent hover:border-secondary-300 rounded-xl">
-                                Discover How It Works
+                            <a href="https://docs.orbinum.net/quick-start/whats_orbinum" target="_blank" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white border border-transparent hover:border-secondary-300 rounded-xl">
+                                Learn More
                                 <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
@@ -64,6 +64,7 @@ export function AboutSection() {
                             key={index}
                             className="cursor-pointer w-full relative overflow-hidden rounded-3xl group border border-secondary-700 hover:border-secondary-600 h-60 lg:h-96 transition-all duration-300 ease-in-out"
                             href={grid.url}
+                            target="_blank"
                         >
                             <div
                                 className="absolute inset-0 z-0 opacity-50 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-125"
@@ -72,7 +73,7 @@ export function AboutSection() {
                                 }}
                             ></div>
                             <div className="relative flex justify-center">
-                                <img src={grid.figure} className="absolute opacity-50 drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] group-hover:opacity-100 transition-all duration-500 ease-in-out group-hover:scale-75" />
+                                <img src={grid.figure} className="absolute opacity-50 drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] group-hover:opacity-100 transition-all duration-500 ease-in-out group-hover:scale-75" alt="" />
                             </div>
 
                             <div className="relative z-10 h-full p-4 flex flex-col justify-between">
